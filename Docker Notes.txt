@@ -1,0 +1,17 @@
+docker pull <name> -> to pull a docker image
+docker images -> to view the docker images
+docker run <image name> echo"message" ->to run a container based on this image
+docker ps -> to view the currently running conatiners
+docker ps -a -> to view all the containers we have run
+docker run -it <imagename> sh->it allow us to run number of commands within a conatiner
+docker rm <containerid> -> to remove a conatiner
+docker rm $(docker ps -a -q -f status=exited) ->to remove all the xited conatiners
+docker container prune -> does same functions as above
+docker run --rm prakhar1989/static-site-> to run or continerize the image and remove the previous running container
+docker run -d -P --name static-site prakhar1989/static-site -> In the above command, -d will detach our terminal, 
+-P will publish all exposed ports to random ports and finally --name corresponds to a name we want to give.
+docker run -p 8888:80 prakhar1989/static-site -> To specify a custom port, 
+to which the client will forward connections to the container.
+docker build -t saifrehman10p/catnip . ->to build a contanerized image
+docker stop static-site -> to stop the conatiner
+pip freeze > requirements.txt

@@ -1,0 +1,21 @@
+GIT HUB:
+git init-> to initalize an empty repository
+ls -a-> to see all hidden files
+git status-> to check the untracked file in the folder
+git add <filename>-> to add the file in staging area to know its status whether it is tracked or not
+git add .-> it allows to add all the untracked files in staging area
+git diff <filename> -> to checkout the difference between the current file and the last version stored in git
+git checkout <filename> -> to revert to the previously stored version of the file on git
+git remote add origin <link> -> to tell that no we are adding the files in our remote repos.
+git push -u origin master -> it links our local and remote repos to add the data in remote repos
+touch .gitignore -> to create git ignore file
+git rm --cached -r . -> to remove all the files added in our staging area
+while working f=with git ignore
+simply we can write the file name row by row in git ignore and to specify al files with specific extension we can do it with*.txt
+## for comments in file
+git clone <link of the project to be clone>
+git log -> to view the history of the commits
+git branch <branch name>-> to create a new branch
+git branch -> to view all the branches
+git checkout branchname -> to switch to a branch
+git merge branchname -> to merge a branch into main

@@ -1,0 +1,34 @@
+Flask learning
+to run a file 
+python -m flask
+set FLASK_APP=hello
+flask run
+To enable all development features, 
+set FLASK_ENV=development
+python -m venv work_env
+return f'hello {escape(username)}'
+
+python -m venv work_env
+
+.venv\scripts\activate -> to activate the env
+To build a URL to a specific function, use the url_for() function
+
+with app.test_request_context():
+any thing for which we want to create a particular request
+
+To generate URLs for static files, use the special 'static' endpoint name:
+
+url_for('static', filename='style.css')
+
+To render a template you can use the render_template() method.
+
+{% extends "layout.html" %} -> extend some of the properties of parent class
+from app import db
+db.create_all()
+cursor.execute('DELETE FROM public."People" WHERE username = %s', (request.form['username'],))
+// to run query with cursor
+cursor.execute('UPDATE public."People" SET email = %s WHERE username = %s',('saif123','saif'))
+con.commit()
+
+while fetching through cursor:
+r = cursor.fetchall()
